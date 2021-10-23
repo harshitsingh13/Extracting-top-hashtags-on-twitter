@@ -1,0 +1,113 @@
+#most number of occurrences
+
+print('most occurence of respective hashtags in tweet')
+import pandas as pd
+data = pd.read_csv("Aunt Polly.csv")
+data=data.to_numpy()
+max0=0
+for i in data:
+  c=i[1].count("Aunt Polly")
+  if(c>max0):
+    max0=c
+  #print(i[1])
+print(max0)
+
+data = pd.read_csv("CSKvPBKS.csv")
+data=data.to_numpy()
+max1=0
+for i in data:
+  c=i[1].count("CSKvPBKS")
+  if(c>max1):
+    max1=c
+  #print(i[1])
+print(max1)
+
+data = pd.read_csv("EVETOT.csv")
+data=data.to_numpy()
+max2=0
+for i in data:
+  c=i[1].count("EVETOT")
+  if(c>max2):
+    max2=c
+  #print(i[1])
+print(max2)
+
+data = pd.read_csv("Everton.csv")
+data=data.to_numpy()
+max3=0
+for i in data:
+  c=i[1].count("Everton")
+  if(c>max3):
+    max3=c
+  #print(i[1])
+print(max3)
+
+data = pd.read_csv("GetWellSoonJANASENANI.csv")
+data=data.to_numpy()
+max4=0
+for i in data:
+  c=i[1].count("GetWellSoonJANASENANI")
+  if(c>max4):
+    max4=c
+  #print(i[1])
+print(max4)
+
+data = pd.read_csv("HBDChiyaanVikram.csv")
+data=data.to_numpy()
+max5=0
+for i in data:
+  c=i[1].count("HBDChiyaanVikram")
+  if(c>max5):
+    max5=c
+  #print(i[1])
+print(max5)
+
+data = pd.read_csv("Harry Kane.csv")
+data=data.to_numpy()
+max6=0
+for i in data:
+  c=i[1].count("Harry Kane")
+  if(c>max6):
+    max6=c
+  #print(i[1])
+print(max6)
+
+data = pd.read_csv("HelenMcCrory.csv")
+data=data.to_numpy()
+max7=0
+for i in data:
+  c=i[1].count("HelenMcCrory")
+  if(c>max7):
+    max7=c
+  #print(i[1])
+print(max7)
+
+data = pd.read_csv("Meredith.csv")
+data=data.to_numpy()
+max8=0
+for i in data:
+  c=i[1].count("Meredith")
+  if(c>max8):
+    max8=c
+  #print(i[1])
+print(max8)
+
+data = pd.read_csv("WhistlePodu.csv")
+data=data.to_numpy()
+max9=0
+for i in data:
+  c=i[1].count("WhistlePodu")
+  if(c>max9):
+    max9=c
+  #print(i[1])
+print(max9)
+
+data = pd.read_csv("Yellove.csv")
+data=data.to_numpy()
+max10=0
+for i in data:
+  c=i[1].count("Yellove")
+  if(c>max10):
+    max10=c
+  #print(i[1])
+print(max10)
