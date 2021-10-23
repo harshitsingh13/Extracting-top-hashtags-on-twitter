@@ -27,3 +27,11 @@ for tweet in tweets:
       likes.append(tweet.favorite_count)
       retweet_count.append(tweet.retweet_count)
         
+########################program to store hashtag data#############
+with open('filename', 'a') as f:
+    csv_writer = csv.DictWriter(f, fieldnames=('user', 'text','favorite_count', 'retweet_count'))
+    csv_writer.writeheader()
+    for i in range(len(user_id)):
+        #print(replies[i])
+        row = {'user': user_id[i], 'text': tweets_list[i], 'favorite_count':likes[i], 'retweet_count':retweet_count[i]}
+        csv_writer.writerow(row)
